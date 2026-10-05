@@ -73,6 +73,7 @@
       return null;
     }
 
+    if (url.protocol !== 'https:' && url.protocol !== 'http:') return null;
     var host = url.hostname.toLowerCase();
     if (host === 'youtu.be') return url.pathname.slice(1).split('/')[0];
     if (host !== 'youtube.com' && host !== 'www.youtube.com' &&
