@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy World Teachers' Day</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="floaters" id="floaters" aria-hidden="true"></div>
+
+  <main>
+    <!-- Closed envelope -->
+    <section class="scene" id="envelope-scene">
+      <p class="tag">Happy World Teachers' Day</p>
+      <button class="envelope" id="envelope" type="button" aria-label="Open the envelope: a letter for you">
+        <span class="env-back"></span>
+        <span class="env-letter" aria-hidden="true"><span class="line"></span><span class="line short"></span><span class="line"></span></span>
+        <span class="env-front"></span>
+        <span class="env-flap"></span>
+        <span class="seal" aria-hidden="true">&#9829;</span>
+        <span class="env-label">For You</span>
+      </button>
+      <p class="hint">Click the envelope</p>
+    </section>
+
+    <!-- Opened letter -->
+    <section class="letter-view" id="letter-view" hidden>
+      <article class="letter" aria-labelledby="letter-title">
+        <p class="stamp" aria-hidden="true">&#10048;</p>
+        <h1 id="letter-title">Happy World Teachers' Day</h1>
+
+        <!-- PHOTO: put your picture at assets/girlfriend.jpg -->
+        <figure class="photo">
+          <img id="photo" src="assets/girlfriend.jpg" alt="A photo of us">
+          <div class="photo-placeholder" id="photo-placeholder">
+            <strong>[ YOUR PHOTO HERE ]</strong>
+            <span>Save it as <code>assets/girlfriend.jpg</code></span>
+          </div>
+        </figure>
+
+        <!-- LETTER MESSAGE: edit the paragraphs below -->
+        <div class="message" id="message">
+          <p>Dear [Her name],</p>
+          <p>[Your heartfelt message goes here. Replace this placeholder text with your own words.]</p>
+          <p>[Add another paragraph here if you like.]</p>
+          <p class="sign">With all my love,<br>[Your name]</p>
+        </div>
+      </article>
+      <button class="again" id="again" type="button">Fold the letter back up</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
