@@ -11,8 +11,8 @@
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var timers = [];
 
-  // Floating hearts, stars and flowers
-  var symbols = ['\u2665', '\u2726', '\u273F', '\u2665'];
+  // Floating hearts and tulips
+  var symbols = ['\u2665', '\u{1F337}', '\u{1F337}', '\u2665'];
   for (var i = 0; i < 14; i++) {
     var s = document.createElement('span');
     s.textContent = symbols[i % symbols.length];
