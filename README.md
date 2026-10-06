@@ -1,21 +1,32 @@
-# Envelope
+# Our Story — Five Years of Us
 
-A tiny, static "open the letter" surprise for World Teachers' Day. Only HTML, CSS and vanilla JavaScript: no installs, no build step, no local software.
+An interactive digital scrapbook for our 5th anniversary. Only HTML, CSS and vanilla JavaScript (`index.html`, `style.css`, `script.js`). **No local software, npm or build step is needed.**
 
-## 1. Add your photo
-Upload your picture into the `assets/` folder and name it **`assets/girlfriend.jpg`** (on GitHub: open `assets/` > *Add file* > *Upload files*). Until it exists, a "YOUR PHOTO HERE" placeholder is shown. To use a different filename, change `src="assets/girlfriend.jpg"` in `index.html`.
+## 1. Where to put photographs
+Upload images to **`assets/photos/`** (on GitHub: open the folder > *Add file* > *Upload files*). `assets/decorations/` is reserved for your own stickers/doodles.
 
-## 2. Write your message
-Open **`index.html`** and find the `<div class="message">` block (marked with the comment `LETTER MESSAGE`). Replace the bracketed placeholder text inside the `<p>` tags with your own words.
+## 2. How to replace each photo
+Every photo slot is listed in the `PAGES` list at the top of **`script.js`**, as `photo("photos/ch1-first.jpg", ...)`. Either upload your picture using that exact filename, or change the filename in the code. Until a file exists, a dashed "[PHOTO: ...]" placeholder shows (no broken images). Photos keep their own aspect ratio, so square and portrait pictures are not cropped.
 
-## 3. Edit and preview on GitHub
-Open a file on GitHub, click the pencil icon, edit, then *Commit changes*. To preview, enable GitHub Pages (below) and open your site URL after the deploy finishes (about a minute). Opening `index.html` directly in a browser also works.
+Slots: `ch1-first`, `ch2-01/02`, `ch3-01/02`, `ch4-01/02`, `ch5-01/02/03` (all `.jpg`; if you use `.png`, edit the name in `script.js`).
 
-## 4. Enable GitHub Pages
-Repository **Settings > Pages > Build and deployment**: Source *Deploy from a branch*, Branch **main**, folder **/ (root)**, then *Save*. Your site appears at `https://<your-username>.github.io/Envelope/`.
+## 3. Captions and dates
+In `script.js`, replace the text in brackets: `[CAPTION: ...]`, `[DATE: ...]`, `[MEMORY: ...]`, `[DESTINATION]`, and the `Favorite Moment #1` titles. Search the file for `[` to find them all.
 
-## 5. No installation needed
+## 4. The anniversary letter
+Last page of `PAGES` in `script.js`: replace `[LETTER: Write our five-year anniversary letter here.]`.
+
+## 5. Navigation
+- Click/tap the right or left side of the book, or use the ‹ › buttons.
+- Keyboard: ArrowRight = next, ArrowLeft = previous.
+- Phone: swipe left/right.
+- "Back to cover" closes the book. Reduced-motion settings disable page-turn animation.
+
+## 6. Preview with GitHub Pages
+Repository **Settings > Pages**: Source *Deploy from a branch*, Branch **main**, folder **/ (root)**, *Save*. Your site appears at `https://<your-username>.github.io/Envelope/` about a minute after each commit.
+
+## 7. No installation needed
 Everything can be done in the browser on github.com.
 
-## Background song
-The linked YouTube song starts when the envelope is opened and stops when the letter is folded back up. To use a different song, replace `musicVideoId` in `script.js` with the ID from its YouTube link.
+## Optional music (off by default)
+Nothing plays automatically. To enable, upload an audio file and set `MUSIC_FILE` at the top of `script.js` (e.g. `"assets/song.mp3"`); it starts only after clicking "Open Our Story".
