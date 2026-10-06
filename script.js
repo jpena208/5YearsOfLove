@@ -7,10 +7,8 @@
   var again = document.getElementById('again');
   var photo = document.getElementById('photo');
   var photoBox = photo.parentNode;
-  var musicForm = document.getElementById('music-form');
-  var youtubeLink = document.getElementById('youtube-link');
-  var musicError = document.getElementById('music-error');
   var musicPlayer = document.getElementById('music-player');
+  var musicVideoId = 'hDU4GB1PTxc';
   var floaters = document.getElementById('floaters');
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var timers = [];
@@ -41,6 +39,13 @@
     if (envelope.classList.contains('open')) return;
     envelope.classList.add('open');
     envelope.setAttribute('aria-expanded', 'true');
+    var player = document.createElement('iframe');
+    player.src = 'https://www.youtube-nocookie.com/embed/' + musicVideoId + '?autoplay=1&controls=0&playsinline=1';
+    player.title = 'Background music';
+    player.allow = 'autoplay; encrypted-media';
+    player.referrerPolicy = 'strict-origin-when-cross-origin';
+    musicPlayer.replaceChildren(player);
+    musicPlayer.hidden = false;
     later(function () { scene.classList.add('leaving'); }, 1700);
     later(function () {
       scene.hidden = true;
@@ -55,7 +60,6 @@
     timers = [];
     musicPlayer.replaceChildren();
     musicPlayer.hidden = true;
-    musicError.hidden = true;
     letterView.hidden = true;
     scene.hidden = false;
     scene.classList.remove('leaving');
@@ -65,48 +69,6 @@
     envelope.focus({ preventScroll: true });
   }
 
-  function getYouTubeVideoId(value) {
-    var url;
-    try {
-      url = new URL(value);
-    } catch (error) {
-      return null;
-    }
-
-    if (url.protocol !== 'https:' && url.protocol !== 'http:') return null;
-    var host = url.hostname.toLowerCase();
-    if (host === 'youtu.be') return url.pathname.slice(1).split('/')[0];
-    if (host !== 'youtube.com' && host !== 'www.youtube.com' &&
-        host !== 'm.youtube.com' && host !== 'youtube-nocookie.com' &&
-        host !== 'www.youtube-nocookie.com') return null;
-
-    if (url.pathname === '/watch') return url.searchParams.get('v');
-    var match = url.pathname.match(/^\/(?:embed|shorts|live)\/([^/]+)/);
-    return match ? match[1] : null;
-  }
-
-  function playYouTube(event) {
-    event.preventDefault();
-    var videoId = getYouTubeVideoId(youtubeLink.value.trim());
-    if (!videoId || !/^[\w-]{11}$/.test(videoId)) {
-      musicError.hidden = false;
-      musicPlayer.replaceChildren();
-      musicPlayer.hidden = true;
-      return;
-    }
-
-    musicError.hidden = true;
-    var player = document.createElement('iframe');
-    player.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(videoId) + '?autoplay=1';
-    player.title = 'YouTube music player';
-    player.allow = 'autoplay; encrypted-media; picture-in-picture; web-share';
-    player.referrerPolicy = 'strict-origin-when-cross-origin';
-    player.allowFullscreen = true;
-    musicPlayer.replaceChildren(player);
-    musicPlayer.hidden = false;
-  }
-
   envelope.addEventListener('click', openEnvelope);
   again.addEventListener('click', reset);
-  musicForm.addEventListener('submit', playYouTube);
 })();

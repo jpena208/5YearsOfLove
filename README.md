@@ -17,5 +17,5 @@ Repository **Settings > Pages > Build and deployment**: Source *Deploy from a br
 ## 5. No installation needed
 Everything can be done in the browser on github.com.
 
-## Play a song
-After opening the letter, paste a YouTube video link into **YouTube link** and select **Play music**. Standard YouTube watch, short, live, and `youtu.be` links are supported.
+## Background song
+The linked YouTube song starts when the envelope is opened and stops when the letter is folded back up. To use a different song, replace `musicVideoId` in `script.js` with the ID from its YouTube link.
