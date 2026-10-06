@@ -18,4 +18,4 @@ Repository **Settings > Pages > Build and deployment**: Source *Deploy from a br
 Everything can be done in the browser on github.com.
 
 ## Background song
-The linked YouTube song starts when the envelope is opened and stops when the letter is folded back up. To use a different song, replace the video ID in `script.js` with the ID from its YouTube link.
+The linked YouTube song starts when the envelope is opened and stops when the letter is folded back up. To use a different song, replace `musicVideoId` in `script.js` with the ID from its YouTube link.
