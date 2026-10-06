@@ -53,22 +53,12 @@
           <p class="sign">With all my love,<br>Josayyy</p>
         </div>
 
-        <section class="music" aria-labelledby="music-title">
-          <h2 id="music-title">A song for you</h2>
-          <form id="music-form">
-            <label for="youtube-link">YouTube link</label>
-            <div class="music-controls">
-              <input id="youtube-link" name="youtube-link" type="url" placeholder="Paste a YouTube link" required>
-              <button type="submit">Play music</button>
-            </div>
-            <p class="music-error" id="music-error" role="alert" hidden>Enter a valid YouTube video link to play music.</p>
-          </form>
-          <div class="music-player" id="music-player" hidden></div>
-        </section>
       </article>
       <button class="again" id="again" type="button">Fold the letter back up</button>
     </section>
   </main>
+
+  <div class="music-player" id="music-player" aria-hidden="true" hidden></div>
 
   <script src="script.js"></script>
 </body>
