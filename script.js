@@ -20,11 +20,10 @@ const CAP_TBD = "[CAPTION: Add caption]";
 // ---- small scrapbook decorations (inline SVG, no image files) ----
 const DECO = {
   turtle: `<svg class="deco turtle" viewBox="0 0 64 40" aria-hidden="true"><ellipse cx="30" cy="22" rx="20" ry="13" fill="#8fa58a"/><path d="M16 22h28M24 12l-3 20M36 12l3 20" stroke="#5f7a5b" stroke-width="1.5" fill="none"/><circle cx="54" cy="19" r="6" fill="#a5b89f"/><circle cx="56" cy="17.5" r="1.1" fill="#4a3b30"/><ellipse cx="18" cy="35" rx="5" ry="3" fill="#a5b89f"/><ellipse cx="40" cy="35" rx="5" ry="3" fill="#a5b89f"/></svg>`,
-  tulip: `<svg class="deco tulip" viewBox="0 0 30 48" aria-hidden="true"><path d="M15 46V22" stroke="#6f8b6a" stroke-width="2.2"/><path d="M15 38c-6-2-9-5-10-9M15 34c5-2 8-4 9-8" stroke="#6f8b6a" stroke-width="2" fill="none"/><path d="M6 8c0 10 3 17 9 17s9-7 9-17l-5 5-4-7-4 7z" fill="#b5566b"/></svg>`,
+  tulip: `<svg class="deco tulip" viewBox="0 0 30 48" aria-hidden="true"><path d="M15 46V22" stroke="#6f8b6a" stroke-width="2.2"/><path d="M15 38c-6-2-9-5-10-9M15 34c5-2 8-4 9-8" stroke="#6f8b6a" stroke-width="2" fill="none"/><path d="M6 8c0 10 3 17 9 17s9-7 9-17l-5 5-4-7-4 7z" fill="#8e63a8"/></svg>`,
   map: `<svg class="deco route" viewBox="0 0 200 36" aria-hidden="true"><path d="M6 28C40 4 60 34 100 16S160 4 192 20" stroke="#8b6d4f" stroke-width="1.6" stroke-dasharray="4 5" fill="none"/><circle cx="6" cy="28" r="3.2" fill="#b5566b"/><path d="M186 14l12 12M198 14l-12 12" stroke="#b5566b" stroke-width="2.2"/></svg>`,
   star: `<span class="deco spark">✦</span>`,
   heart: `<span class="deco spark">♡</span>`,
-  flower: `<span class="deco spark">✿</span>`
 };
 
 // ---- helpers ------------------------------------------------
@@ -63,7 +62,7 @@ function chapter(num, title, range, sub, deco) {
   return { type: "chapter", html: `<div class="inner center chap">
     <p class="kicker">Chapter ${num}</p>
     <h2 class="big">${title}</h2>
-    <div class="rule"><span>✿</span></div>
+    <div class="rule">${DECO.tulip}</div>
     <p class="hand">${range}</p>
     <p class="sub memory">${sub}</p>
     ${deco || ""}
@@ -79,7 +78,7 @@ function timeline(items) {
 const PAGES = [
   { ch: "", html: `<div class="inner center">
       <p class="hand">for Ronalyn</p><h2 class="big">Our Story</h2>
-      <p class="kicker">Five Years of Us</p><div class="rule"><span>✿</span></div>
+      <p class="kicker">Five Years of Us</p><div class="rule">${DECO.tulip}</div>
       <p class="hand">2021 — 2026</p><p class="note">Turn the page →</p></div>` },
 
   // ===== CHAPTER I =====
@@ -123,7 +122,7 @@ const PAGES = [
       text: ["December 12: a concert gift, since she couldn’t attend Taylor Swift. December 22: meeting her first two friends."], cls: "dense" }) },
 
   // ===== CHAPTER II =====
-  { ch: "Chapter II", ...chapter("II", "Growing Together", "July 2022 – July 2023", "Two years of knowing each other. Now we were finally going to meet.", DECO.flower) },
+  { ch: "Chapter II", ...chapter("II", "Growing Together", "July 2022 – July 2023", "Two years of knowing each other. Now we were finally going to meet.", DECO.tulip) },
   { ch: "Chapter II", html: mem({ id: "plan-1", date: "Spring 2023", title: "The plan", photos: ["Planning screenshot", "Itinerary / map"], travel: true,
       text: ["We began seriously planning our first in-person meetup."] }) },
   { ch: "Chapter II", html: mem({ id: "first-meeting", date: "July 2023", title: "Finally.", photos: ["The first meeting"],

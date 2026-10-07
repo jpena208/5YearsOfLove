@@ -213,6 +213,7 @@ button:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
 .tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 2px 8px; font: 1rem var(--hand); color: var(--sage); }
 .decor { position: absolute; right: 7%; bottom: 7%; display: flex; gap: 6px; align-items: flex-end; opacity: .9; }
 .deco.turtle { width: 52px; } .deco.tulip { width: 24px; } .deco.spark { color: var(--gold); font-size: 1.3rem; }
+.rule .deco.tulip { width: 14px; flex: 0 0 14px; }
 .deco.route { width: 62%; opacity: .75; margin-top: 2px; }
 .ticket { padding: 3px 18px; } .ticket b { font-size: 1.1rem; }
 
