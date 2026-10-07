@@ -183,7 +183,7 @@ const PAGES = [
       text: ["The night I quickly put together impromptu decor to give you your ring ❤️ Craziness, but dedicated to you ❤️", "Promises, from me, to you"], cls: "special dramatic" }) },
   { ch: "Chapter III", html: mem({ id: "her-family", date: "Christmas &amp; New Year’s", title: "Christmas with your family", photos: ["Meeting her family", "Christmas / New Year’s"],
       text: ["Visiting Paete, meeting your family, Christmas together. New Year’s together. Memories forever ❤️"], cls: "warm" }) },
-  { ch: "Chapter III", html: mem({ id: "missed-flight", date: "Jan 2025"D, title: "Even the missed flight", photos: ["Airport / extra day"],
+  { ch: "Chapter III", html: mem({ id: "missed-flight", date: "Jan 2025", title: "Even the missed flight", photos: ["Airport / extra day"],
       text: ["I missed my flight and was stressed. You stayed, helped calm me down, and we got to spend an extra day together ❤️"], quote: "You stayed with me when things went wrong." }) },
 
   // ===== CHAPTER IV =====
