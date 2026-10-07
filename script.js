@@ -10,8 +10,8 @@
    ========================================================== */
 
 const MUSIC_FILE = "";                          // optional, e.g. "assets/song.mp3". Empty = no audio.
-const LETTERS_URL = "[MONTHSARY LETTERS WEBSITE URL]"; // <- paste the monthsary letters website address here
-const FINAL_LETTER = "[INSERT FINAL 5TH ANNIVERSARY LETTER HERE]"; // <- the letter text goes here
+const LETTERS_URL = "https://docs.google.com/document/d/1jP61e8dzRDE8at7fRDYxopVFBNfluRGa3OTEJ9_CLBs/edit?usp=drive_link";
+const FINAL_LETTER = "You know me, you know I'm EXTRAAA bee. I hope you've enjoyed reliving some of these moments as I have. I'm sorry I'm not there, I'm sorry I can't deliver more for you. My baby deserves extra, my baby deserves spoiling. I'm always going to do my best for you babygirl. Here's to five years of us, five of the best years of my life ❤️";
 
 const PHOTO_EXTS = ["jpg", "jpeg", "png", "webp"];
 const DATE_TBD = "[DATE: Add date]";
@@ -256,7 +256,7 @@ const PAGES = [
       <div class="shots">${photo("final", 1, "Large favorite photo", 0)}</div>
       <p class="memory">Five years down.</p><p class="memory">Forever to go.</p>
       <p class="hand big-hand">Happy 5th Anniversary, mahal kooo.</p><p class="hand sign">— Josayyy</p>
-      <a class="letters-btn" id="lettersBtn" target="https://docs.google.com/document/d/1jP61e8dzRDE8at7fRDYxopVFBNfluRGa3OTEJ9_CLBs/edit?usp=drive_link" rel="noopener">Read all our letters</a></div>` }
+      <a class="letters-btn" id="lettersBtn" target="_blank" rel="noopener">Read all our letters</a></div>` }
 ];
 
 // ---- book logic -------------------------------------------
@@ -323,7 +323,7 @@ const letterEl = document.getElementById("letterBody");
 if (letterEl) letterEl.textContent = FINAL_LETTER;
 const lb = document.getElementById("lettersBtn");
 if (lb) {
-  if (/^https?:\/\//.test(LETTERS_URL)) lb.href = LETTERS_URL;
+  if (/^https?:\/\//.test(LETTERS_URL)) { lb.href = LETTERS_URL; lb.target = "_blank"; }
   else { lb.removeAttribute("target"); lb.classList.add("pending"); lb.title = LETTERS_URL; lb.textContent += " " + LETTERS_URL; lb.addEventListener("click", e => e.preventDefault()); }
 }
 
