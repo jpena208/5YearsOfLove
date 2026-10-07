@@ -194,6 +194,7 @@ button:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
 .shots { --h: 30cqh; --ar: 4/3; display: flex; flex-direction: column; align-items: center; gap: 1.5cqh; width: 100%; margin: .5cqh 0; }
 .n1 .shots { --h: 46cqh; --ar: 1/1; }
 .n2 .shots { --h: 27cqh; } .n3 .shots { --h: 20cqh; --ar: 3/2; }
+.n4 .shots { --h: 13cqh; --ar: 3/2; }
 .n1.hero .shots, .n1.dramatic .shots { --h: 54cqh; }
 .shots .photo { max-width: 86%; margin: 0; }
 .n2 .photo:nth-child(2), .n3 .photo:nth-child(2) { align-self: flex-end; margin-top: -1cqh; }
@@ -284,7 +285,7 @@ button:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
 .controls .chapter-menu button { width: auto; height: auto; min-height: 40px; padding: 4px 12px; border-radius: 4px; font-size: .95rem; color: var(--brown); background: var(--parch); border: 1px solid var(--gold); }
 @media (max-width: 480px) { .stage { gap: 10px; padding: 8px; } .indicator { min-width: 0; font-size: .85rem; } }
 .mem { padding-top: 6.5cqh; padding-bottom: 6cqh; }
-.n1 .shots { --h: 43cqh; } .n2 .shots { --h: 24cqh; } .n3 .shots { --h: 18cqh; }
+.n1 .shots { --h: 43cqh; } .n2 .shots { --h: 24cqh; } .n3 .shots { --h: 18cqh; } .n4 .shots { --h: 12cqh; }
 .n1.hero .shots, .n1.dramatic .shots { --h: 50cqh; }
 .dense.n3 .shots { --h: 15cqh; } .dense .quote { font-size: 1.05rem; }
 .mem .photo.polaroid { padding-bottom: 14px; }
