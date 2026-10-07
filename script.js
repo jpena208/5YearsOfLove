@@ -221,7 +221,7 @@ const PAGES = [
       text: ["Our purple TikTok streak wow 🤯"], cls: "playful" }) },
   { ch: "Chapter V", html: mem({ id: "cozy", date: "May 2026", title: "Cozy mornings in Makati", photos: ["Cozy morning", "Sneaky moment"],
       text: ["Time together with my you and my mom was so cool. Cozy mornings, Spurs and sneaky moments 'watching movies' hehe."], cls: "warm" }) },
-  { ch: "Chapter V", html: mem({ id: "intramuros", date: "May 2026", title: "Intramuros excursion", photos: ["Intramuros"], travel: true, text: ["Fun walks around Intramuros, lasting pictures] }) },
+  { ch: "Chapter V", html: mem({ id: "intramuros", date: "May 2026", title: "Intramuros excursion", photos: ["Intramuros"], travel: true, text: ["Fun walks around Intramuros, lasting pictures"] }) },
   { ch: "Chapter V", html: mem({ id: "food", date: "May 2026", title: "Babe's Home Cookin", photos: ["Chicken tinola", "MOA walk", "Clark Marriott"],
       text: ["Walking around MOA with you and my mom was cool, enjoying your chicken tinola was cozy ❤️"], cls: "dense" }) },
   { ch: "Chapter IV", html: mem({ id: "may-2025-clark", date: "May 2026", title: "A Night at Clark", photos: ["Clark Marriott"], text: ["Our first night at Clark Marriott after chill ride. Good food, good conversations, and another night together that I didn't want to end."], deco: ["postmark"] }) },
