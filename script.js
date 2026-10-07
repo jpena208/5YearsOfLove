@@ -116,13 +116,13 @@ const PAGES = [
       ["June 18, 2022", "I first told my mom about you"],
       ["June 28, 2022", "I first told my Rene too"],
       ["July 8, 2022", "You worked on your cool first resume"]])}${DECO.star}</div>` },
-  { ch: "Chapter I", html: mem({ id: "anniv-1", date: "October 2022", title: "Our first anniversary", photos: ["Bee &amp; Bee Comics", "Three crocheted tulips"],
-      text: ["I made “Bee &amp; Bee Comics.” You crocheted three pretty tulips for me with meaningful letter."], cls: "gift", deco: ["tulip"] }) },
-  { ch: "Chapter I", html: mem({ id: "grad", date: "September 29, 2022", title: "Your graduation", photos: ["Ronalyn’s graduation"],
-      text: ["I was so proud of you, despite your doubts and worries, you forged on like always and graduated ❤️"], cls: "special" }) },
   { ch: "Chapter I", html: mem({ id: "work-hard", date: "September 11, 2022", title: "When work was hard for me...", photos: ["Her message screenshot"],
       text: ["You supported me. You gave me the courage to keep going with words I'll never forget"], quote: "“Be an amateur and be willing to learn.”", cls: "quotepage" }) },
-  { ch: "Chapter I", html: mem({ id: "xmas-2022", date: "December 2022", title: "One fun Christmas ❤️", photos: ["Grinch picture", "December 12 concert gift", "December 22: meeting her first two friends"],
+   { ch: "Chapter I", html: mem({ id: "grad", date: "September 29, 2022", title: "Your graduation", photos: ["Ronalyn’s graduation"],
+      text: ["I was so proud of you, despite your doubts and worries, you forged on like always and graduated ❤️"], cls: "special" }) },
+   { ch: "Chapter I", html: mem({ id: "anniv-1", date: "October 2022", title: "Our first anniversary", photos: ["Bee &amp; Bee Comics", "Three crocheted tulips"],
+      text: ["I made “Bee &amp; Bee Comics.” You crocheted three pretty tulips for me with meaningful letter."], cls: "gift", deco: ["tulip"] }) },
+   { ch: "Chapter I", html: mem({ id: "xmas-2022", date: "December 2022", title: "One fun Christmas ❤️", photos: ["Grinch picture", "December 12 concert gift", "December 22: meeting her first two friends"],
       text: ["December 12: when you couldn't make the concert, I brought the concert to you ❤️ December 22: your first time qwento with Ae and Brin about us."], cls: "dense" }) },
 
   // ===== CHAPTER II =====
