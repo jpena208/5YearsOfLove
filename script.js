@@ -141,7 +141,7 @@ const PAGES = [
       text: ["You passed and I was so proud all your hard work paid off!"], cls: "special" }) },
   { ch: "Chapter II", html: mem({ id: "little-things", date: "February 2024", title: "The little things continue", photos: ["Fake tulips for her dorm", "Another little thing"],
       video: "Valentine’s video",
-      text: ["Valentines, Game of Thrones, and good times rolling ❤️"], deco: ["tulip"], cls: "soft" }) },
+      text: ["Valentines, Game of Thrones, and good times rolling ❤️"], deco: ["tulip"], cls: "soft with-video" }) },
 
   { ch: "Chapter III", html: mem({ id: "second-meeting", date: "April 2024", title: "Our second meeting",
       photos: ["Meeting again", "Together again", "A favorite moment from our visit"], travel: true,
