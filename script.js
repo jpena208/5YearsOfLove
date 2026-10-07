@@ -256,7 +256,7 @@ const PAGES = [
       <div class="shots">${photo("final", 1, "Large favorite photo", 0)}</div>
       <p class="memory">Five years down.</p><p class="memory">Forever to go.</p>
       <p class="hand big-hand">Happy 5th Anniversary, mahal kooo.</p><p class="hand sign">— Josayyy</p>
-      <a class="letters-btn" id="lettersBtn" target="_blank" rel="noopener">Read all our letters</a></div>` }
+      <a class="letters-btn" id="lettersBtn" target="https://docs.google.com/document/d/1jP61e8dzRDE8at7fRDYxopVFBNfluRGa3OTEJ9_CLBs/edit?usp=drive_link" rel="noopener">Read all our letters</a></div>` }
 ];
 
 // ---- book logic -------------------------------------------
