@@ -24,6 +24,13 @@ const DECO = {
   map: `<svg class="deco route" viewBox="0 0 200 36" aria-hidden="true"><path d="M6 28C40 4 60 34 100 16S160 4 192 20" stroke="#8b6d4f" stroke-width="1.6" stroke-dasharray="4 5" fill="none"/><circle cx="6" cy="28" r="3.2" fill="#b5566b"/><path d="M186 14l12 12M198 14l-12 12" stroke="#b5566b" stroke-width="2.2"/></svg>`,
   star: `<span class="deco spark">✦</span>`,
   heart: `<span class="deco spark">♡</span>`,
+  stamp: `<span class="deco spark" aria-hidden="true">✉</span>`,
+  shell: `<span class="deco spark" aria-hidden="true">🐚</span>`,
+  wave: `<span class="deco spark" aria-hidden="true">〰</span>`,
+  fish: `<span class="deco spark" aria-hidden="true">🐟</span>`,
+  ticket: `<span class="deco spark" aria-hidden="true">🎟</span>`,
+  postmark: `<span class="deco spark" aria-hidden="true">✉</span>`,
+  sun: `<span class="deco spark" aria-hidden="true">☀</span>`,
 };
 
 // ---- helpers ------------------------------------------------
