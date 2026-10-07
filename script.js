@@ -162,8 +162,8 @@ const PAGES = [
       text: ["This was so fun being sneaky trying to enlist Maryl to get your ring size lol"], cls: "playful" }) },
   { ch: "Chapter III", html: mem({ id: "ring", date: "December 2, 2024", title: "Getting the ring", photos: ["The ring"],
       text: ["I finally received the ring just in time before our trip, it's so prettyyyy"], cls: "special" }) },
-  { ch: "Chapter III", html: mem({ id: "baguio", date: "December 15, 2024 onward", title: "Christmas together 🥲😍", photos: ["Baguio"], travel: true,
-      text: ["Hays, it's always good to see your pretty face again ❤️], deco: ["star"] }) },
+  { ch: "Chapter III", html: mem({ id: "baguio", date: "December 15, 2024 onward", title: "Christmas together 🥲😍", photos: ["Baguio", "Baguio"], travel: true,
+      text: ["Hays, it's always good to see your pretty face again ❤️"], deco: ["star"] }) },
   { ch: "Chapter III", html: mem({ id: "baguio-night", date: "December 18, 2024", title: "First night in Baguio", photos: ["Night walk with crochet frogs"],
       text: ["Walking at night with our crochet frogs, the christmas decor, the night market. All so cool ❤️"] }) },
   { ch: "Chapter III", html: mem({ id: "burnham", date: "December 19, 2024", title: "Burnham + Mines View", photos: ["Burnham Park", "Mines View"], travel: true,
@@ -243,7 +243,7 @@ const PAGES = [
   { ch: "Chapter V", html: `<div class="inner center favs"><h3 class="ttl">Favorite moments</h3>
       <div class="collage">${[1, 2, 3, 4, 5, 6].map(i => photo("favorites", i, "Favorite #" + i, i)).join("")}</div>
       <p class="memory">My favorite part wasn’t any single day.</p><p class="memory">It was getting to have all of them with you.</p></div>` },
-  { ch: "Chapter V", html: `<div class="inner letter-page"><p class="hand salute">Dear Ronalyn Masbano, my sharkfin queen, my ravenclaw nerd, msspb,</p>
+  { ch: "Chapter V", html: `<div class="inner letter-page"><p class="hand salute">Dear Ronalyn Masbaño, my sharkfin queen, my ravenclaw nerd, msspb,</p>
       <p class="body" id="letterBody"></p><p class="hand sign">— Joey</p></div>`, letter: true },
   { ch: "Chapter V", final: true, html: `<div class="inner mem n1 final-page special">
       <div class="shots">${photo("final", 1, "Large favorite photo", 0)}</div>
