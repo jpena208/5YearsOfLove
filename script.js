@@ -251,7 +251,7 @@ const PAGES = [
       <div class="collage">${[1, 2, 3, 4, 5, 6].map(i => photo("favorites", i, "Favorite #" + i, i)).join("")}</div>
       <p class="memory">My favorite part wasn’t any single day.</p><p class="memory">It was getting to have all of them with you.</p></div>` },
   { ch: "Chapter V", html: `<div class="inner letter-page"><p class="hand salute">Dear Ronalyn Masbaño, my sharkfin queen, my ravenclaw nerd, msspb,</p>
-      <p class="body" id="letterBody"></p><p class="hand sign">— Josayyy</p></div>`, letter: true },
+      <p class="body" id="letterBody">You know me, you know I'm EXTRAAA bee. I hope you've enjoyed reliving some of these moments as I have. I'm sorry I'm not there, I'm sorry I can't deliver more for you. My baby deserves extra, my baby deserves spoiling. I'm always going to do my best for you babygirl. Here's to five years of us, five of the best years of my life ❤️</p><p class="hand sign">— Love, Josayyy</p></div>`, letter: true },
   { ch: "Chapter V", final: true, html: `<div class="inner mem n1 final-page special">
       <div class="shots">${photo("final", 1, "Large favorite photo", 0)}</div>
       <p class="memory">Five years down.</p><p class="memory">Forever to go.</p>
