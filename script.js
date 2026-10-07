@@ -126,7 +126,7 @@ const PAGES = [
       text: ["December 12: when you couldn't make the concert, I brought the concert to you ❤️ December 22: your first time qwento with Ae and Brin about us."], cls: "dense" }) },
 
   // ===== CHAPTER II =====
-  { ch: "Chapter II", ...chapter("II", "Growing Together", "", "Two years of knowing each other. Now we we're finally going to meet.", DECO.tulip) },
+  { ch: "Chapter II", ...chapter("II", "Growing Together", "", "Two years of knowing each other. Now we're finally going to meet.", DECO.tulip) },
   { ch: "Chapter II", html: mem({ id: "first-meeting", date: "July 2023", title: "Finally.", photos: ["The first meeting", "Our first hello", "First day together", "A favorite moment"],
       text: ["After two years of screens, calls, photos, and counting the days, I finally got to meet you."], cls: "special hero" }) },
   { ch: "Chapter II", html: mem({ id: "first-night", date: "July 2023 · Tagaytay", title: "Our cozy nights", photos: ["Cozy night in Tagaytay"],
