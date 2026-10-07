@@ -24,6 +24,13 @@ const DECO = {
   map: `<svg class="deco route" viewBox="0 0 200 36" aria-hidden="true"><path d="M6 28C40 4 60 34 100 16S160 4 192 20" stroke="#8b6d4f" stroke-width="1.6" stroke-dasharray="4 5" fill="none"/><circle cx="6" cy="28" r="3.2" fill="#b5566b"/><path d="M186 14l12 12M198 14l-12 12" stroke="#b5566b" stroke-width="2.2"/></svg>`,
   star: `<span class="deco spark">✦</span>`,
   heart: `<span class="deco spark">♡</span>`,
+  stamp: `<span class="deco spark" aria-hidden="true">✉</span>`,
+  shell: `<span class="deco spark" aria-hidden="true">🐚</span>`,
+  wave: `<span class="deco spark" aria-hidden="true">〰</span>`,
+  fish: `<span class="deco spark" aria-hidden="true">🐟</span>`,
+  ticket: `<span class="deco spark" aria-hidden="true">🎟</span>`,
+  postmark: `<span class="deco spark" aria-hidden="true">✉</span>`,
+  sun: `<span class="deco spark" aria-hidden="true">☀</span>`,
 };
 
 // ---- helpers ------------------------------------------------
@@ -162,8 +169,8 @@ const PAGES = [
       text: ["This was so fun being sneaky trying to enlist Maryl to get your ring size lol"], cls: "playful" }) },
   { ch: "Chapter III", html: mem({ id: "ring", date: "December 2, 2024", title: "Getting the ring", photos: ["The ring"],
       text: ["I finally received the ring just in time before our trip, it's so prettyyyy"], cls: "special" }) },
-  { ch: "Chapter III", html: mem({ id: "baguio", date: "December 15, 2024 onward", title: "Christmas together 🥲😍", photos: ["Baguio"], travel: true,
-      text: ["Hays, it's always good to see your pretty face again ❤️], deco: ["star"] }) },
+  { ch: "Chapter III", html: mem({ id: "baguio", date: "December 15, 2024 onward", title: "Christmas together 🥲😍", photos: ["Baguio", "Baguio"], travel: true,
+      text: ["Hays, it's always good to see your pretty face again ❤️"], deco: ["star"] }) },
   { ch: "Chapter III", html: mem({ id: "baguio-night", date: "December 18, 2024", title: "First night in Baguio", photos: ["Night walk with crochet frogs"],
       text: ["Walking at night with our crochet frogs, the christmas decor, the night market. All so cool ❤️"] }) },
   { ch: "Chapter III", html: mem({ id: "burnham", date: "December 19, 2024", title: "Burnham + Mines View", photos: ["Burnham Park", "Mines View"], travel: true,
@@ -221,7 +228,7 @@ const PAGES = [
       text: ["Our purple TikTok streak wow 🤯"], cls: "playful" }) },
   { ch: "Chapter V", html: mem({ id: "cozy", date: "May 2026", title: "Cozy mornings in Makati", photos: ["Cozy morning", "Sneaky moment"],
       text: ["Time together with my you and my mom was so cool. Cozy mornings, Spurs and sneaky moments 'watching movies' hehe."], cls: "warm" }) },
-  { ch: "Chapter V", html: mem({ id: "intramuros", date: "May 2026", title: "Intramuros excursion", photos: ["Intramuros"], travel: true, text: ["Fun walks around Intramuros, lasting pictures] }) },
+  { ch: "Chapter V", html: mem({ id: "intramuros", date: "May 2026", title: "Intramuros excursion", photos: ["Intramuros"], travel: true, text: ["Fun walks around Intramuros, lasting pictures"] }) },
   { ch: "Chapter V", html: mem({ id: "food", date: "May 2026", title: "Babe's Home Cookin", photos: ["Chicken tinola", "MOA walk", "Clark Marriott"],
       text: ["Walking around MOA with you and my mom was cool, enjoying your chicken tinola was cozy ❤️"], cls: "dense" }) },
   { ch: "Chapter IV", html: mem({ id: "may-2025-clark", date: "May 2026", title: "A Night at Clark", photos: ["Clark Marriott"], text: ["Our first night at Clark Marriott after chill ride. Good food, good conversations, and another night together that I didn't want to end."], deco: ["postmark"] }) },
@@ -243,7 +250,7 @@ const PAGES = [
   { ch: "Chapter V", html: `<div class="inner center favs"><h3 class="ttl">Favorite moments</h3>
       <div class="collage">${[1, 2, 3, 4, 5, 6].map(i => photo("favorites", i, "Favorite #" + i, i)).join("")}</div>
       <p class="memory">My favorite part wasn’t any single day.</p><p class="memory">It was getting to have all of them with you.</p></div>` },
-  { ch: "Chapter V", html: `<div class="inner letter-page"><p class="hand salute">Dear Ronalyn Masbano, my sharkfin queen, my ravenclaw nerd, msspb,</p>
+  { ch: "Chapter V", html: `<div class="inner letter-page"><p class="hand salute">Dear Ronalyn Masbaño, my sharkfin queen, my ravenclaw nerd, msspb,</p>
       <p class="body" id="letterBody"></p><p class="hand sign">— Joey</p></div>`, letter: true },
   { ch: "Chapter V", final: true, html: `<div class="inner mem n1 final-page special">
       <div class="shots">${photo("final", 1, "Large favorite photo", 0)}</div>
