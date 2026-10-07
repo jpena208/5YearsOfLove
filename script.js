@@ -104,7 +104,7 @@ const PAGES = [
       quote: "You helped me say yes.", cls: "emotional" }) },
   { ch: "Chapter I", html: mem({ id: "turtles", date: "January 7, 2022", title: "Our first date", photos: ["Park / nature center"],
       text: ["You told me to put our love out in the universe, I went to the nature center and was so happy you woke up for a tour. Our favorite moment: two turtles swimming toward each other, greeting face-to-face."], deco: ["turtle"] }) },
-  { ch: "Chapter I", html: mem({ id: "smile", date: "2021 — 2022", title: "You gave me my smile ❤️", photos: ["Earlier photo", "Later photo", "Full-smile photo"],
+  { ch: "Chapter I", html: mem({ id: "smile", date: "2021 — 2022", title: "You gave me my smile ❤️", photos: ["Earlier photo", "Later photo", "Full-smile photo"], cls: "photo-collage",
       quote: "Thank you for giving me my smile",
       text: ["You told me to smile more, to smile big. Before you, I never smiled for pics", "You helped me find my smile, and love it ❤️"], cls: "dense" }) },
   { ch: "Chapter I", html: mem({ id: "valentine-2022", date: "Valentine’s Day 2022", title: "First Valentine’s", photos: ["Edited Valentine’s photo", "Edited Valentine’s photo"],
@@ -112,8 +112,8 @@ const PAGES = [
   { ch: "Chapter I", html: mem({ id: "supporting", date: "Spring 2022", title: "Supporting each other through ups and downs", photos: ["Portfolio / work screenshot", "Cooking photo"],
       text: ["I loved how we supported each other always. You, with my websites, job hunting, and cooking. Me, with your student teaching, grad soon, resume building."] }) },
   { ch: "Chapter I", html: `<div class="inner"><h3 class="ttl">Two lives becoming one</h3>${timeline([
+      ["March 26, 2022", "I first told my mom about you"],
       ["June 12, 2022", "First TikTok accounts with our matching profile pictures"],
-      ["June 18, 2022", "I first told my mom about you"],
       ["June 28, 2022", "I first told my Rene too"],
       ["July 8, 2022", "You worked on your cool first resume"]])}${DECO.star}</div>` },
   { ch: "Chapter I", html: mem({ id: "work-hard", date: "September 11, 2022", title: "When work was hard for me...", photos: ["Her message screenshot"],
@@ -122,7 +122,7 @@ const PAGES = [
       text: ["I was so proud of you, despite your doubts and worries, you forged on like always and graduated ❤️"], cls: "special" }) },
    { ch: "Chapter I", html: mem({ id: "anniv-1", date: "October 2022", title: "Our first anniversary", photos: ["Bee &amp; Bee Comics", "Three crocheted tulips"],
       text: ["I made “Bee &amp; Bee Comics.” You crocheted three pretty tulips for me with meaningful letter."], cls: "gift", deco: ["tulip"] }) },
-   { ch: "Chapter I", html: mem({ id: "xmas-2022", date: "December 2022", title: "One fun Christmas ❤️", photos: ["Grinch picture", "December 12 concert gift", "December 22: meeting her first two friends"],
+   { ch: "Chapter I", html: mem({ id: "xmas-2022", date: "December 2022", title: "One fun Christmas ❤️", photos: ["Grinch picture", "December 12 concert gift", "December 22: meeting her first two friends"], cls: "photo-collage",
       text: ["December 12: when you couldn't make the concert, I brought the concert to you ❤️ December 22: your first time qwento with Ae and Brin about us."], cls: "dense" }) },
 
   // ===== CHAPTER II =====
@@ -211,7 +211,7 @@ const PAGES = [
       text: ["Karaoke with each other and with Ae/Chard was so fun. I loved watching you sing, having a blast ❤️"], cls: "playful" }) },
   { ch: "Chapter IV", html: mem({ id: "tlos", date: "October", title: "The Life of Two Young Lovers", photos: ["TLOS together"],
       text: ["Enjoying album release together (Even if not best album), singing in the shower, all the Swiftie decor. I hope I made it very special for you ❤️"], cls: "playful", tags: ["TLOS"] }) },
-  { ch: "Chapter IV", html: mem({ id: "little-things-2", date: "October", title: "Little things in Swiftie Town", photos: ["Date dinner", "Clay masks", "Favorite pizza"],
+  { ch: "Chapter IV", html: mem({ id: "little-things-2", date: "October", title: "Little things in Swiftie Town", photos: ["Date dinner", "Clay masks", "Favorite pizza"], cls: "dense photo-collage",
       text: ["All our date dinners, the clay mask night, our favorite pizza ever, a giant guyabano, and shopping at huge mall. All memorable and fun ❤️"], cls: "dense" }) },
 
   // ===== CHAPTER V =====
