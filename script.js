@@ -2,7 +2,7 @@
    OUR STORY — digital scrapbook  (Joey ♡ Ronalyn)
    ----------------------------------------------------------
    ALL EDITABLE CONTENT LIVES IN THE `PAGES` LIST BELOW.
-   - Photos:  assets/photos/<page-id>-1.jpg, -2.jpg, and onward ...
+   - Photos:  assets/photos/<page-id>-1.jpg, -2.jpg, -3.jpg ...
    - Videos:  assets/videos/<page-id>.mp4 (optional thumbnail:
               assets/photos/<page-id>-video.jpg)
    - Anything in [BRACKETS] is a placeholder to replace.
@@ -67,7 +67,7 @@ function chapter(num, title, range, sub, deco) {
     <p class="sub memory">${sub}</p>
     ${deco || ""}
     <p class="ph-text chapimg">[PHOTO: optional chapter photo]<small>assets/photos/chapter-${num}-1.jpg</small></p>
-  </div>`, id: "chapter-" + num, chapterNumber: num };
+  </div>`, id: "chapter-" + num };
 }
 function timeline(items) {
   return `<div class="tl">${items.map(([d, t], i) => `<div class="tl-item ${i % 2 ? "r" : ""}"><b class="hand">${d}</b><span>${t}</span></div>`).join("")}</div>`;
@@ -81,14 +81,16 @@ const PAGES = [
       <p class="kicker">And My Favorite Memories</p><div class="rule">${DECO.tulip}</div>
       <p class="hand">2021 — 2026</p><p class="note">Turn the page →</p></div>` },
 
-  // ===== CHAPTER III =====
-  { ch: "Chapter III", ...chapter("III", "Our Adventures", "", "Double the trips, double the fun!", DECO.map) },
+  // ===== CHAPTER I =====
+  { ch: "Chapter I", ...chapter("I", "The Beginning", "", "Before we knew what this would become.", DECO.star) },
   { ch: "Chapter I", html: mem({ id: "jul14", date: "July 14, 2021", title: "Our Luckiest Day", photos: ["Earliest photo / screenshot"],
       text: ["Our luckiest day, we met and started chatting unknowingly to how important we'd become for each other ❤️"] }) },
-  { ch: "Chapter III", html: mem({ id: "early-days", date: "The early days", title: "Snap spam, poems &amp; singing",
-      photos: ["Early Snaps", "Early conversation", "StoryTime", "Singing Night"],
-      text: ["Sending spams to each other, my funny fake stories, slowly learning about each other.", "The first ways we bonded sa snapchat, silly and building things forever ours."],
-      cls: "scrap", tags: ["Unfiltered", "Pineapple", "Saturn", "ForTheBun", "Froggies", "Sharkfin", "Mobee"], deco: ["star"] }) },
+  { ch: "Chapter I", html: mem({ id: "early-days", date: "The early days", title: "Snap spam &amp; fun convos", photos: ["Early Snaps", "Early conversation"],
+      text: ["Sending spams to each other, my funny fake stories, slowly learning about each other.", CAP_TBD], cls: "scrap", tags: ["Unfiltered", "Pineapple", "Saturn"] }) },
+  { ch: "Chapter I", html: mem({ id: "storytime", date: "The early days", title: "Poems, Drawings &amp; Singing", photos: ["StoryTime", "Singing Night"],
+      text: ["The first ways we bonded sa snapchat, silly and building things forever ours.", CAP_TBD], tags: ["ForTheBun", "Froggies", "Sharkfin", "Mobee"], deco: ["star"] }) },
+  { ch: "Chapter I", html: mem({ id: "bee", date: "The fake stories", title: "Becoming Bee", photos: ["Early fake-story screenshot", "Early screenshot"],
+      text: ["Somewhere in the fake stories, we started calling each other “Bee.”"], cls: "playful", deco: ["heart"] }) },
   { ch: "Chapter I", html: mem({ id: "oct7-2021", date: "October 7 / 8, 2021", title: "Going steady", photos: ["Our first day as a couple"],
       text: ["We finally accepted what our hearts were telling us, you became my girlfie ❤️"], cls: "special", deco: ["heart"] }) },
   { ch: "Chapter I", html: mem({ id: "octopus", date: "Early November 2021", title: "Start of your crochets", photos: ["Purple octopus"],
@@ -120,8 +122,10 @@ const PAGES = [
       text: ["December 12: when you couldn't make the concert, I brought the concert to you ❤️ December 22: your first time qwento with Ae and Brin about us."], cls: "dense" }) },
 
   // ===== CHAPTER II =====
-  { ch: "Chapter II", html: mem({ id: "first-meeting", date: "July 2023", title: "Finally.",
-      photos: ["The first meeting", "Our first day together", "A moment from our visit", "Another favorite from our visit"],
+  { ch: "Chapter II", ...chapter("II", "Growing Together", "", "Two years of knowing each other. Now we were finally going to meet.", DECO.tulip) },
+  { ch: "Chapter II", html: mem({ id: "plan-1", date: "Spring 2023", title: "The plan", photos: ["Planning screenshot", "Itinerary / map"], travel: true,
+      text: ["We began seriously planning our first in-person meetup."] }) },
+  { ch: "Chapter II", html: mem({ id: "first-meeting", date: "July 2023", title: "Finally.", photos: ["The first meeting"],
       text: ["After two years of screens, calls, photos, and counting the days, I finally got to meet you."], cls: "special hero" }) },
   { ch: "Chapter II", html: mem({ id: "first-night", date: "July 2023 · Tagaytay", title: "Our cozy nights", photos: ["Cozy night in Tagaytay"],
       text: ["Watching The Good Bad Mother, enjoying the rain, first time shopping together ❤️"] }) },
@@ -139,26 +143,34 @@ const PAGES = [
       text: ["Remember how after you took the LET exam, and a package of gifts I sent arrived na perfectly timed ❤️ You appreciated how magical it was"] }) },
   { ch: "Chapter II", html: mem({ id: "passed", date: "December 2023", title: "then you passed!", photos: ["LET result / my letter"],
       text: ["You passed and I was so proud all your hard work paid off!"], cls: "special" }) },
-  { ch: "Chapter II", html: mem({ id: "little-things", date: "February 2024", title: "The little things continue", photos: ["Fake tulips for her dorm", "Another little thing"],
-      video: "Valentine’s video",
-      text: ["Valentines, Game of Thrones, and good times rolling ❤️"], deco: ["tulip"], cls: "soft with-video" }) },
+  { ch: "Chapter II", html: mem({ id: "little-things", date: "February 2024", title: "The little things continue", photos: ["Fake tulips for her dorm"],
+      text: ["Valentines, Game of Thrones, and good times rolling ❤️"], deco: ["tulip"], cls: "soft" }) },
 
-  { ch: "Chapter III", html: mem({ id: "second-meeting", date: "April 2024", title: "Our second meeting",
-      photos: ["Meeting again", "Together again", "A favorite moment from our visit"], travel: true,
+  // ===== CHAPTER III =====
+  { ch: "Chapter III", ...chapter("III", "Our Adventures", "", "Double the trips, double the fun!", DECO.map) },
+  { ch: "Chapter III", html: mem({ id: "plan-2", date: "March / April 2024", title: "Planning the next adventure", photos: ["Planning screenshot"], travel: true,
+      text: [CAP_TBD] }) },
+  { ch: "Chapter III", html: mem({ id: "second-meeting", date: "April 2024", title: "Our second meeting", photos: ["Meeting again"], travel: true,
       text: ["The wait to finally see you again was too long."], cls: "special" }) },
-  { ch: "Chapter III", html: mem({ id: "welcome", date: "April 2024", title: "Our little stay", photos: ["Handmade fake tulip bouquet", "Sushi bake"],
+  { ch: "Chapter III", html: mem({ id: "welcome", date: "April 2024", title: "Our little stay", photos: ["Handmade fake tulip bouquet"],
       text: ["Loved the gifts and sushi bake we shared."], deco: ["tulip"] }) },
-  { ch: "Chapter III", html: mem({ id: "tagaytay2", date: "April 2024", title: "An amazing view to share", photos: ["Sushi bake", "Escala balcony", "Our Tagaytay view"], travel: true,
+  { ch: "Chapter III", html: mem({ id: "tagaytay2", date: "April 2024", title: "An amazing view to share", photos: ["Sushi bake", "Escala balcony"], travel: true,
       text: ["Our stay in Escala, excursion to Starbucks, exploring skyranch, all so cool ❤️"] }) },
   { ch: "Chapter III", html: mem({ id: "pico-nights", date: "April 2024", title: "Pico de Loro", photos: ["Sky Ranch / park night", "Beach or ducks"], travel: true,
       text: ["Pico de loro was a nice beach, and it was awesome to spend with you. I love our moment with the ducks, your narration lol. And our outdoor fancy dinner time, but getting back to the room was better hehe"] }) },
-  { ch: "Chapter III", html: mem({ id: "favs-2024", date: "April 2024", title: "Favorite photos",
-      photos: ["Favorite photo", "Favorite photo", "Favorite photo", "Favorite photo"], cls: "quiet" }) },
+  { ch: "Chapter III", html: mem({ id: "favs-2024", date: "April 2024", title: "Favorite photos", photos: ["Favorite photo", "Favorite photo"], cls: "quiet" }) },
+  { ch: "Chapter III", html: mem({ id: "sinigang", date: "June 6, 2024", title: "Back home cooking", photos: ["My first sinigang at home"],
+      text: ["Making my first Sinigang and sharing with my family was cool ❤️"] }) },
   { ch: "Chapter III", html: mem({ id: "cheers", date: "July 14, 2024", title: "All our virtual cheers", video: "Virtual cheers / 3-year video",
       text: ["I loved every time we ate together and had virtual cheers. Made a video for our three years since luckiest day ❤️"] }) },
   { ch: "Chapter III", html: mem({ id: "gifts", date: "September 15, 2024", title: "Little gifts we loved ❤️", photos: ["Crocheted beanie for Europe", "Heart charcuterie"],
       text: ["Loved you crocheting a beanie for me, and I sent you a heart charcuterie, good times ❤️"], cls: "gift" }) },
-  { ch: "Chapter III", html: mem({ id: "oct7-2024", date: "October 7, 2024", title: "Anniversary gifts", photos: ["Gifts / silent video call"],
+  { ch: "Chapter III", html: mem({ id: "europe-plan", date: "2024", title: "Europe", photos: ["Europe planning"], travel: true,
+      text: ["Planning Europe: the next big adventure."] }) },
+
+  // ===== CHAPTER IV =====
+  { ch: "Chapter IV", ...chapter("IV", "Our Favorite Moments", "July 2024 – July 2025", "[SUBTITLE: Add a line about our favorite moments]", DECO.heart) },
+  { ch: "Chapter IV", html: mem({ id: "oct7-2024", date: "October 7, 2024", title: "Anniversary gifts", photos: ["Gifts / silent video call"],
       text: ["Ronalyn received her gifts and we video-called, silently."], cls: "quiet" }) },
   { ch: "Chapter IV", html: mem({ id: "ring-plan", date: "November 12, 2024", title: "The promise ring plan", photos: ["Planning screenshot", "Planning screenshot"],
       text: ["Behind the scenes: I began planning the promise ring with Ronalyn’s friend."], cls: "playful" }) },
@@ -180,7 +192,6 @@ const PAGES = [
       text: ["Meeting her family. Christmas together. New Year’s together."], cls: "warm" }) },
   { ch: "Chapter IV", html: mem({ id: "missed-flight", date: DATE_TBD, title: "The missed flight", photos: ["Airport / extra day"],
       text: ["I missed my flight and was stressed. Ronalyn helped calm me down, and I got to stay an extra day."], quote: "You stayed with me when things went wrong." }) },
-  { ch: "Chapter IV", ...chapter("IV", "Our Favorite Moments", "", "[SUBTITLE: Add a line about our favorite moments]", DECO.heart) },
   { ch: "Chapter IV", html: mem({ id: "europe-1", date: DATE_TBD, title: "Europe", photos: ["Europe photo", "Europe photo"], travel: true, text: [CAP_TBD] }) },
   { ch: "Chapter IV", html: mem({ id: "europe-2", date: DATE_TBD, title: "Europe", photos: ["Europe photo", "Europe photo", "Europe photo"], travel: true, text: [CAP_TBD], cls: "dense" }) },
   { ch: "Chapter IV", html: mem({ id: "eiffel", date: "Valentine’s Day", title: "Eiffel", photos: ["Pullman Eiffel Hotel / Eiffel Tower call"],
@@ -191,6 +202,8 @@ const PAGES = [
   { ch: "Chapter IV", html: mem({ id: "lasalle", date: DATE_TBD, title: "La Salle", photos: ["Start of her Master’s"],
       text: ["Ronalyn began her Master’s at La Salle."], cls: "special" }) },
 
+  // ===== CHAPTER V =====
+  { ch: "Chapter V", ...chapter("V", "Five Years", "July 2025 – October 2026", "And somehow, we’re still writing it.", DECO.star) },
   { ch: "Chapter V", html: mem({ id: "anniv-4", date: "October 2025", title: "The fourth anniversary", photos: ["Real tulip bouquet and decorations"],
       text: ["A real tulip bouquet and decorations were waiting when she arrived. She loved it."], deco: ["tulip"] }) },
   { ch: "Chapter V", html: mem({ id: "cook-together-2", date: DATE_TBD, title: "Cooking together", photos: ["Steak", "Redeemed pasta"],
@@ -201,7 +214,6 @@ const PAGES = [
       text: ["Enjoying TLOS together in our own way."], cls: "playful", tags: ["TLOS"] }) },
   { ch: "Chapter V", html: mem({ id: "little-things-2", date: DATE_TBD, title: "Little things", photos: ["Date dinner", "Clay masks", "Favorite pizza"],
       text: ["Date dinners, clay masks, our favorite pizza, a giant guyabano, and shopping."], cls: "dense" }) },
-  { ch: "Chapter V", ...chapter("V", "Five Years", "", "And somehow, we’re still writing it.", DECO.star) },
   { ch: "Chapter V", html: mem({ id: "nov-2025", date: "November 16, 2025", title: "Her birthday", photos: ["Tulip bouquet"],
       text: ["A tulip bouquet for her birthday."], deco: ["tulip"] }) },
   { ch: "Chapter V", html: mem({ id: "instax", date: "December 18, 2025", title: "The Instax", photos: ["Photo she took with the Instax", "Photo she took with the Instax"],
@@ -254,12 +266,6 @@ const PAGES = [
       <p class="hand big-hand">Happy 5th Anniversary, my love.</p><p class="hand sign">— Joey</p>
       <a class="letters-btn" id="lettersBtn" target="_blank" rel="noopener">Read all our letters</a></div>` }
 ];
-
-let activeChapter = "";
-PAGES.forEach(p => {
-  if (p.type === "chapter") activeChapter = `Chapter ${p.chapterNumber}`;
-  if (p.ch) p.ch = activeChapter;
-});
 
 // ---- book logic -------------------------------------------
 const $ = id => document.getElementById(id);
@@ -335,7 +341,7 @@ PAGES.forEach((p, i) => { if (p.type === "chapter") chapterStarts.push(i); });
 const menu = $("chapterMenu");
 function toPage(i) { menu.hidden = true; current = i; busy = false; render(); }
 menu.innerHTML = `<button type="button" data-i="0">Opening page</button>` +
-  chapterStarts.map(s => `<button type="button" data-i="${s}">Chapter ${PAGES[s].chapterNumber}</button>`).join("");
+  chapterStarts.map((s, i) => `<button type="button" data-i="${s}">Chapter ${["I","II","III","IV","V"][i]}</button>`).join("");
 menu.addEventListener("click", e => { const b = e.target.closest("button"); if (b) toPage(+b.dataset.i); });
 $("chaptersBtn").addEventListener("click", () => { menu.hidden = !menu.hidden; });
 
