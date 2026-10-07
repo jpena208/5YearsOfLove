@@ -37,11 +37,17 @@
 
     <nav class="controls" id="controls" hidden>
       <button type="button" id="prevBtn" aria-label="Previous page">‹</button>
-      <span class="indicator" id="indicator">01 / 12</span>
+      <span class="indicator" id="indicator">01 / 01</span>
       <button type="button" id="nextBtn" aria-label="Next page">›</button>
+      <button type="button" id="chaptersBtn" class="text-btn">Chapters</button>
       <button type="button" id="closeBtn" class="text-btn">Back to cover</button>
+      <div class="chapter-menu" id="chapterMenu" hidden></div>
     </nav>
   </main>
+
+  <div class="vmodal" id="videoModal" hidden role="dialog" aria-label="Video">
+    <div class="vframe"><button type="button" id="videoClose" aria-label="Close video">✕</button><div id="videoBox"></div></div>
+  </div>
 
   <!-- Optional music: disabled by default. See README ("Optional music"). -->
   <script src="script.js"></script>
