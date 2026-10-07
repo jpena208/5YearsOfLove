@@ -333,7 +333,8 @@ PAGES.forEach((p, i) => { if (p.type === "chapter") chapterStarts.push(i); });
 const menu = $("chapterMenu");
 function toPage(i) { menu.hidden = true; current = i; busy = false; render(); }
 menu.innerHTML = `<button type="button" data-i="0">Opening page</button>` +
-  chapterStarts.map((s, i) => `<button type="button" data-i="${s}">Chapter ${["I","II","III","IV","V"][i]}</button>`).join("");
+  chapterStarts.map((s, i) => `<button type="button" data-i="${s}">Chapter ${["I","II","III","IV","V"][i]}</button>`).join("") +
+  `<button type="button" data-i="${total - 1}">End of book</button>`;
 menu.addEventListener("click", e => { const b = e.target.closest("button"); if (b) toPage(+b.dataset.i); });
 $("chaptersBtn").addEventListener("click", () => { menu.hidden = !menu.hidden; });
 

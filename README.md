@@ -32,7 +32,7 @@ At the top of `script.js`, replace **`LETTERS_URL`** (`[MONTHSARY LETTERS WEBSIT
 - Click/tap the right or left edge of the book, or use the ‹ › buttons.
 - Keyboard: ArrowRight = next, ArrowLeft = previous.
 - Phone: swipe left/right.
-- "Chapters" jumps to a chapter; "Back to cover" closes the book.
+- "Chapters" jumps to a chapter, the opening page, or the end of the book; "Back to cover" closes the book.
 - Reduced-motion settings disable the page-turn animation.
 
 ## 8. Enable GitHub Pages
