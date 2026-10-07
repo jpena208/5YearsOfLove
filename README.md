@@ -13,7 +13,7 @@ Upload `.mp4` files to **`assets/videos/`**. Videos never autoplay; they open in
 
 ## 3. How to replace placeholders
 Every placeholder tells you the exact filename it expects, e.g. `assets/photos/first-meeting-1.jpg`.
-Name = **page id** + `-1`, `-2`, `-3` (photo order on the page). Simply upload a file with that name (`.jpg`, `.jpeg`, `.png` or `.webp`); the placeholder is replaced automatically. Photos keep their own aspect ratio (nothing is cropped).
+Name = **page id** + `-1`, `-2`, etc. (photo order on the page). For example, the first-meeting page has slots `first-meeting-1` through `first-meeting-4`. Simply upload a file with that name (`.jpg`, `.jpeg`, `.png` or `.webp`); the placeholder is replaced automatically. Photos keep their own aspect ratio (nothing is cropped).
 
 - Video: upload `assets/videos/<page-id>.mp4`. Optional thumbnail: `assets/photos/<page-id>-video.jpg`. Video cards are on the virtual cheers page (`cheers`) and the little things page (`little-things`).
 - To add a video to another page, add `video: "Label"` to that page in `script.js`.

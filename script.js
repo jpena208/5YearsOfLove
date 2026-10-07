@@ -2,7 +2,7 @@
    OUR STORY — digital scrapbook  (Joey ♡ Ronalyn)
    ----------------------------------------------------------
    ALL EDITABLE CONTENT LIVES IN THE `PAGES` LIST BELOW.
-   - Photos:  assets/photos/<page-id>-1.jpg, -2.jpg, -3.jpg ...
+   - Photos:  assets/photos/<page-id>-1.jpg, -2.jpg, and onward ...
    - Videos:  assets/videos/<page-id>.mp4 (optional thumbnail:
               assets/photos/<page-id>-video.jpg)
    - Anything in [BRACKETS] is a placeholder to replace.
