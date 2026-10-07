@@ -285,12 +285,16 @@ button:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
 @media (max-width: 480px) { .stage { gap: 10px; padding: 8px; } .indicator { min-width: 0; font-size: .85rem; } }
 .mem { padding-top: 6.5cqh; padding-bottom: 6cqh; }
 .n1 .shots { --h: 43cqh; } .n2 .shots { --h: 24cqh; } .n3 .shots { --h: 18cqh; }
+.n4 .shots { --h: 11cqh; --ar: 3/2; }
 .n1.hero .shots, .n1.dramatic .shots { --h: 50cqh; }
 .dense.n3 .shots { --h: 15cqh; } .dense .quote { font-size: 1.05rem; }
+.has-video .shots { --h: 12cqh; }
+.has-video .vthumb .ph-box { width: min(100%, 28cqh); }
+.has-video .vthumb img { max-height: 18cqh; }
 .mem .photo.polaroid { padding-bottom: 14px; }
 .final-page .shots { --h: 34cqh; }
 .mem > *, .shots > * { flex-shrink: 0; }
-.n3 .ph-text, .mini .ph-text { font-size: .75rem; line-height: 1.1; } .n3 .ph-text small, .mini .ph-text small { font-size: .5rem; }
+.n3 .ph-text, .n4 .ph-text, .mini .ph-text { font-size: .75rem; line-height: 1.1; } .n3 .ph-text small, .n4 .ph-text small, .mini .ph-text small { font-size: .5rem; }
 .favs .collage .photo { width: 100%; }
 .favs .collage .ph-box { width: 100%; --ar: 4/3; }
 .favs .collage img { max-height: 16cqh; }
